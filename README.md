@@ -1,2 +1,2 @@
 # DariuszBaj.pl
-![Logo](./src/assets/DariuszBaj.png)
+![Logo](./src/assets/DariuszBaj.svg)
