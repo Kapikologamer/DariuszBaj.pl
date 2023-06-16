@@ -1,2 +1,2 @@
 # DariuszBaj.pl
-![Logo](https://kapikologamer.github.io/Metastal12/assets/kesus.png)
+![Logo](https://github.com/kapikologamer/DariuszBaj.pl/assets/DariuszBaj.svg)
