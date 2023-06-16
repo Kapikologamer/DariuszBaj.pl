@@ -1,2 +1,2 @@
 # DariuszBaj.pl
-![Logo](https://Kapikologamer.github.io/Metastal12/assets/kesek.png)
+![Logo](https://kapikologamer.github.io/Metastal12/assets/kesus.png)
