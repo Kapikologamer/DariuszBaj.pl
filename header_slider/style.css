@@ -71,13 +71,17 @@ header {
     .header_top {
         justify-content: space-between;
     }
+
+    .header_banner .content {
+        height: 18vh;
+    }
   }
 
 /* Banner */
 
 .header_banner {
     width: 100%;
-    height: 20vh;
+    height: 16vw;
     /* overflow: hidden; */
     background-color: #1D1D1F;
     display: flex;
@@ -89,8 +93,8 @@ header {
 }
 
 .header_banner .content {
-    width: 90%;
-    height: 18vh;
+    width: 75%;
+    height: 14vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,12 +102,27 @@ header {
     background-image: url(e_img3.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0.5rem;
     animation: banner 10s infinite ease-in-out;
 }
 
 .header_banner .content h4 {
     color: #F5F5F7;
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+
+    .header_banner {
+        height: 20vh;
+    }
+
+    .header_banner .content {
+        height: 18vh;
+        width: 90%;
+    }
+  }
 
 @keyframes banner {
     0% {
@@ -126,3 +145,9 @@ header {
         background-image: url(e_img1.jpg);
     }
 }
+
+.scroll {
+    height: 100vh;
+}
+
+/* Footer */
