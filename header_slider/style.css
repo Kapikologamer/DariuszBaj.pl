@@ -146,9 +146,9 @@ header {
     }
 }
 
-/* .scroll {
+.scroll {
     height: 100vh;
-} */
+}
 
 
 /* NavBar */
@@ -173,7 +173,7 @@ header {
         left: 0;
         right: 0;
         background-color: #1D1D1F;
-        animation: 0.4s mobile_menu ease-in-out;
+        animation: 0.4s mobile_menu ease-out;
     }
 
     #mobile_menu h1 {
@@ -217,6 +217,7 @@ header {
   @keyframes mobile_menu {
     0% {
         opacity: 0;
+        transform: translateY(-120px);
     }
 
     100% {
@@ -228,9 +229,10 @@ header {
 /* Footer */
 
 footer {
-    position: fixed;
+    right: 0;
+    left: 0;
     bottom: 0;
-    width: 100vw;
+    /* width: 100vw; */
     padding: 2rem;
     background-color: #1D1D1F;
     box-shadow: 10px -1px 25px -12px rgba(66, 68, 90, 1);
