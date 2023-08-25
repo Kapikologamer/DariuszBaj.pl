@@ -151,8 +151,6 @@ header {
 }
 
 
-/* NavBar */
-
 
 
 /* Mobile Menu */
@@ -224,6 +222,37 @@ header {
         opacity: 1;
     }
 }
+
+/* NavBar */
+
+.navbar {
+    background-color: #1D1D1F;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+}
+
+.dropdown {
+    color: #F5F5F7;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    border-right: 1px solid #5f5f5f;
+    border-left: 1px solid #5f5f5f;
+    padding: 0 1.5rem 0 2rem;
+}
+
+.dropdown i {
+    font-size: 23px;
+    vertical-align: middle;
+}
+
+.dropdown ul {
+    position: absolute;
+}
+
 
 
 /* Footer */
