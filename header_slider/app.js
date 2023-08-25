@@ -26,7 +26,7 @@ function dropdown(x) {
     const ID = 'dropdown'+ x;
     var dropdown = document.getElementById(ID);
     if (dropdown.style.display === "none") {
-        dropdown.style.display = "block";
+        dropdown.style.display = "flex";
     } else {
         dropdown.style.display = "none";
     }
