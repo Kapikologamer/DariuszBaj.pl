@@ -1,3 +1,10 @@
+<?php 
+
+include 'connect.php';
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pl-PL">
 <head>
@@ -57,48 +64,6 @@
     <main>
         <h3 class="main_title">Posty</h3>
         <div class="card_wrapper">
-            <div class="card">
-                <div class="img">
-                    <i class='bx bx-image'></i>
-                </div>
-                <h3 class="card_title">Tytuł posta</h3>
-                <a href="#">Czytaj</a>
-            </div>
-            <div class="card">
-                <div class="img">
-                    <i class='bx bx-image'></i>
-                </div>
-                <h3 class="card_title">Tytuł posta</h3>
-                <a href="#">Czytaj</a>
-            </div>
-            <div class="card">
-                <div class="img">
-                    <i class='bx bx-image'></i>
-                </div>
-                <h3 class="card_title">Tytuł posta</h3>
-                <a href="#">Czytaj</a>
-            </div>
-            <div class="card">
-                <div class="img">
-                    <i class='bx bx-image'></i>
-                </div>
-                <h3 class="card_title">Tytuł posta</h3>
-                <a href="#">Czytaj</a>
-            </div>
-            <div class="card">
-                <div class="img">
-                    <i class='bx bx-image'></i>
-                </div>
-                <h3 class="card_title">Tytuł posta</h3>
-                <a href="#">Czytaj</a>
-            </div>
-            <div class="card">
-                <div class="img">
-                    <i class='bx bx-image'></i>
-                </div>
-                <h3 class="card_title">Tytuł posta</h3>
-                <a href="#">Czytaj</a>
-            </div>
             <div class="card">
                 <div class="img">
                     <i class='bx bx-image'></i>
