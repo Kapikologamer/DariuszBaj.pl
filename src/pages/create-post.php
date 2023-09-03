@@ -1,3 +1,30 @@
+<?php 
+
+include '../connect.php';
+if(isset($_POST['submit'])){
+    header("Location: ../index.php");
+    $title = $_POST['title'];
+    // $description = $_POST['description'];
+    // $attachment = "zero";
+
+    header("Location: ../index.php");
+
+
+    $sql="insert into `posty` (title)
+    values('$title')";
+    $result=mysqli_query($con,$sql);
+    if($result){
+        echo "Data inserted successfully";
+    } else {
+        echo die(mysqli_error($con));
+    }
+
+    header("Location: ../index.php");
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pl-PL">
 <head>
@@ -13,7 +40,7 @@
     <header>
         <h1>Dodaj nowy post</h1>
     </header>
-    <form method="post">
+    <form action="insert_post.php" method="post">
         <h4>Tytuł posta</h4>
         <input type="text" name="title" id="input-title">
         <h4>Opis posta</h4>
