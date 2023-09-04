@@ -1,26 +1,26 @@
 <?php 
 
-include '../connect.php';
-if(isset($_POST['submit'])){
-    header("Location: ../index.php");
-    $title = $_POST['title'];
-    // $description = $_POST['description'];
-    // $attachment = "zero";
+// include '../connect.php';
+// if(isset($_POST['submit'])){
+//     header("Location: ../index.php");
+//     $title = $_POST['title'];
+//     // $description = $_POST['description'];
+//     // $attachment = "zero";
 
-    header("Location: ../index.php");
+//     header("Location: ../index.php");
 
 
-    $sql="insert into `posty` (title)
-    values('$title')";
-    $result=mysqli_query($con,$sql);
-    if($result){
-        echo "Data inserted successfully";
-    } else {
-        echo die(mysqli_error($con));
-    }
+//     $sql="insert into `posty` (title)
+//     values('$title')";
+//     $result=mysqli_query($con,$sql);
+//     if($result){
+//         echo "Data inserted successfully";
+//     } else {
+//         echo die(mysqli_error($con));
+//     }
 
-    header("Location: ../index.php");
-}
+//     header("Location: ../index.php");
+// }
 
 ?>
 
@@ -45,7 +45,7 @@ if(isset($_POST['submit'])){
         <input type="text" name="title" id="input-title">
         <h4>Opis posta</h4>
         <textarea type="text" name="description" id="input-description"></textarea>
-        <button type="submit" id="add_post">Dodaj</button>
+        <button name="insert" type="submit" id="add_post">Dodaj</button>
     </form>
     <form enctype="multipart/form-data" action="upload-file.php" method="post">
         <h4 class="infil">Dołącz plik</h4>

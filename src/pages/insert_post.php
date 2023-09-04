@@ -1,17 +1,17 @@
 <?php 
 
-include '../connect.php';
+if(isset($_POST['insert'])){
+    echo 'jebać kurwy';
+    $connect = new mysqli('localhost', 'root', '', 'dariuszbaj');
 
-$title=$_REQUEST['title'];
-$description=$_REQUEST['description'];
-$attachment="zero";
+    $title = $_POST['title'];
+    $description = $_POST['description'];
 
-$sql = " INSERT INTO posty VALUES ('$title','$description','$attachment')";
+    $query = "INSERT INTO `posty`(`title`, `description`) VALUES ('$title','$description')";
 
-if(mysqli_query($con,$sql)){
-    echo "mam wyjebane";
-} else {
-    echo "no coś sie spierdoliło";
+    $result = mysqli_query($connect,$query);
+
+    mysqli_close($connect);
 }
 
 ?>
