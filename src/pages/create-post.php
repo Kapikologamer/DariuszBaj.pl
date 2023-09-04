@@ -1,30 +1,3 @@
-<?php 
-
-// include '../connect.php';
-// if(isset($_POST['submit'])){
-//     header("Location: ../index.php");
-//     $title = $_POST['title'];
-//     // $description = $_POST['description'];
-//     // $attachment = "zero";
-
-//     header("Location: ../index.php");
-
-
-//     $sql="insert into `posty` (title)
-//     values('$title')";
-//     $result=mysqli_query($con,$sql);
-//     if($result){
-//         echo "Data inserted successfully";
-//     } else {
-//         echo die(mysqli_error($con));
-//     }
-
-//     header("Location: ../index.php");
-// }
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="pl-PL">
 <head>
