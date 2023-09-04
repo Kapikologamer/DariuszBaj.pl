@@ -12,6 +12,8 @@ if(isset($_POST['insert'])){
     $result = mysqli_query($connect,$query);
 
     mysqli_close($connect);
+
+    header('Location: ../');
 }
 
 ?>
