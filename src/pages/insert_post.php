@@ -1,7 +1,6 @@
 <?php 
 
 if(isset($_POST['insert'])){
-    echo 'jebać kurwy';
     $connect = new mysqli('localhost', 'root', '', 'dariuszbaj');
 
     $title = $_POST['title'];
