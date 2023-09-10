@@ -1,3 +1,15 @@
+<?php 
+
+if(isset($_GET)){
+    $login_info = $_GET['li'];
+    if($login_info != '518313611'){
+        header('Location: ./login.php');
+    }
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pl-PL">
 <head>
