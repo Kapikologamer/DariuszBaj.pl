@@ -1,3 +1,15 @@
+<?php 
+
+$connect = new mysqli('localhost', 'root', '', 'dariuszbaj');
+
+$sql = "SELECT * FROM posty";
+$posty = $connect->query($sql);
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pl-PL">
 <head>
@@ -6,7 +18,8 @@
     <meta name="theme-color" content="#1D1D1F">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Slider_TEST</title>
+    <link rel="shortcut icon" href="./assets/icons/world.svg" type="image/x-icon">
+    <title>Strona Główna</title>
 </head>
 <body>
     <header>
@@ -57,13 +70,15 @@
     <main>
         <h3 class="main_title">Posty</h3>
         <div class="card_wrapper">
+            <?php while($row = mysqli_fetch_assoc($posty)){ ?>
             <div class="card">
                 <div class="img">
                     <i class='bx bx-image'></i>
                 </div>
-                <h3 class="card_title">Tytuł posta</h3>
+                <h3 class="card_title"><?php echo $row["title"]; ?></h3>
                 <a href="#">Czytaj</a>
             </div>
+            <?php } ?>
         </div>
     </main>
     <!-- <div class="scroll"></div> -->
